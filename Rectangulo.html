@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        console.log("hola")
+                     // new structure ES2022
+                     class Rectangulo {
+                        #perimetro = 0;
+                        #area = 0;
+                        #base = 0;
+                        #altura = 0;
+                        constructor(base, altura) {
+                            this.#base = base;
+                            this.#altura = altura;
+
+                        }
+                        calcularArea() {
+                            this.#area = this.#base * this.#altura;
+                            return this.#area;
+                        }
+                calculaPerimetro() {
+                    this.#perimetro = 2 * (this.#base + this.#altura);
+                    return this.#perimetro;
+                }
+                     }
+
+                     const rectangulo = new Rectangulo(3, 4);
+                     const area = rectangulo.calcularArea();
+                const perimetro = rectangulo.calcularPerimetro();
+    </script>
+</html>
