@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circulo</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        console.log("Hola");
+                    // new estructure ES2022
+                    class Cuadrado {
+                            #radio = 0;
+                #area = 0;
+                #perimetro = 0;
+
+            constructor(radio) {
+                this.#radio = radio;
+            }
+            calcularArea() {
+                this.#area = Math.PI * this.#radio ** 2;
+                return this.#area;
+            }
+            calcularPerimetro() {
+                this.#perimetro = 2 * Math.PI * this.#radio;
+                return this.#perimetro;
+            }
+        }
+
+        const circulo = new Circulo(5);
+        const area = circulo.calcularArea();
+        const perimetro = circulo.calcularPerimetro();
+    </script>
+</html>
