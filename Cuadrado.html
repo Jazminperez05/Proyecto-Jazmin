@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuadrado</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        console.log("Hola");
+        // new estructure ES2022
+        class Cuadrado {
+            #lado = 0;
+            #area = 0;
+            #perimetro = 0;
+
+            constructor(lado) {
+                this.#lado = lado;
+            }
+            calcularArea() {
+                this.#area = this.#lado ** 2;
+                return this.#area;
+            }
+            calcularPerimetro() {
+                this.#perimetro = 4 * this.#lado;
+                return this.#perimetro;
+            }
+        }
+
+        const cuadrado = new Cuadrado(5);
+        const area = cuadrado.calcularArea();
+        const perimetro = cuadrado.calcularPerimetro();
+
+        console.log("Area:", area);
+        console.log("Perímetro:", perimetro);
+    </script>
+</html>
