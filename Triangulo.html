@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title> Triangulo </title>
+</head>
+<body>
+
+</body>
+<script>
+    console.log("Hola");
+    // new estructure ES2022
+    class Triangulo {
+        #perimetro = 0;
+        #area = 0;
+        #base = 0;
+        #altura = 0;
+
+        constructor(base, altura) {
+            this.#base = base;
+            this.#altura = altura;
+        }
+        calcularArea() {
+            this.#area = (this.#base * this.#altura) / 2;
+            return this.#area;
+        }
+        calcularPerimetro() {
+            this.#perimetro = this.#base +  Math.sqrt(this.#base ** 2 + this.#altura);
+            return this.#perimetro;
+        }
+    }
+
+    const triangulo = new Triangulo(3, 4);
+    const area = triangulo.calcularArea();
+    const perimetro = triangulo.calcularPerimetro();
+</script>
+</html>
